@@ -10,10 +10,9 @@
 		6E7383CA2D5AED7F004D0450 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7383C92D5AED7F004D0450 /* MainView.swift */; };
 		6E7383CC2D5AF52A004D0450 /* AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7383CB2D5AF52A004D0450 /* AddRecordView.swift */; };
 		6EBD22802D5784CE0075A02A /* HouseholdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD227F2D5784CE0075A02A /* HouseholdApp.swift */; };
-		6EBD22822D5784CE0075A02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD22812D5784CE0075A02A /* ContentView.swift */; };
 		6EBD22842D5784D30075A02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD22832D5784D30075A02A /* Assets.xcassets */; };
 		6EBD22872D5784D30075A02A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD22862D5784D30075A02A /* Preview Assets.xcassets */; };
-		6EBD22892D5784D30075A02A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD22882D5784D30075A02A /* Persistence.swift */; };
+		6EBD22892D5784D30075A02A /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD22882D5784D30075A02A /* PersistenceController.swift */; };
 		6EBD228C2D5784D30075A02A /* Household.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD228A2D5784D30075A02A /* Household.xcdatamodeld */; };
 		6EBD22972D5784D30075A02A /* HouseholdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD22962D5784D30075A02A /* HouseholdTests.swift */; };
 		6EBD22A12D5784D30075A02A /* HouseholdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD22A02D5784D30075A02A /* HouseholdUITests.swift */; };
@@ -42,10 +41,9 @@
 		6E7383CB2D5AF52A004D0450 /* AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordView.swift; sourceTree = "<group>"; };
 		6EBD227C2D5784CE0075A02A /* Household.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Household.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBD227F2D5784CE0075A02A /* HouseholdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdApp.swift; sourceTree = "<group>"; };
-		6EBD22812D5784CE0075A02A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EBD22832D5784D30075A02A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EBD22862D5784D30075A02A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6EBD22882D5784D30075A02A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6EBD22882D5784D30075A02A /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		6EBD228B2D5784D30075A02A /* Household.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Household.xcdatamodel; sourceTree = "<group>"; };
 		6EBD228D2D5784D30075A02A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EBD22922D5784D30075A02A /* HouseholdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseholdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,10 +103,9 @@
 			children = (
 				6E7383C92D5AED7F004D0450 /* MainView.swift */,
 				6EBD227F2D5784CE0075A02A /* HouseholdApp.swift */,
-				6EBD22812D5784CE0075A02A /* ContentView.swift */,
 				6E7383CB2D5AF52A004D0450 /* AddRecordView.swift */,
 				6EBD22832D5784D30075A02A /* Assets.xcassets */,
-				6EBD22882D5784D30075A02A /* Persistence.swift */,
+				6EBD22882D5784D30075A02A /* PersistenceController.swift */,
 				6EBD228D2D5784D30075A02A /* Info.plist */,
 				6EBD228A2D5784D30075A02A /* Household.xcdatamodeld */,
 				6EBD22852D5784D30075A02A /* Preview Content */,
@@ -271,10 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EBD22892D5784D30075A02A /* Persistence.swift in Sources */,
+				6EBD22892D5784D30075A02A /* PersistenceController.swift in Sources */,
 				6E7383CC2D5AF52A004D0450 /* AddRecordView.swift in Sources */,
 				6EBD228C2D5784D30075A02A /* Household.xcdatamodeld in Sources */,
-				6EBD22822D5784CE0075A02A /* ContentView.swift in Sources */,
 				6E7383CA2D5AED7F004D0450 /* MainView.swift in Sources */,
 				6EBD22802D5784CE0075A02A /* HouseholdApp.swift in Sources */,
 			);
