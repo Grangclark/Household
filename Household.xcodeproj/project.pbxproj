@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E7383CA2D5AED7F004D0450 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7383C92D5AED7F004D0450 /* MainView.swift */; };
+		6E7383CC2D5AF52A004D0450 /* AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7383CB2D5AF52A004D0450 /* AddRecordView.swift */; };
 		6EBD22802D5784CE0075A02A /* HouseholdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD227F2D5784CE0075A02A /* HouseholdApp.swift */; };
 		6EBD22822D5784CE0075A02A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD22812D5784CE0075A02A /* ContentView.swift */; };
 		6EBD22842D5784D30075A02A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBD22832D5784D30075A02A /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E7383C92D5AED7F004D0450 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6E7383CB2D5AF52A004D0450 /* AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordView.swift; sourceTree = "<group>"; };
 		6EBD227C2D5784CE0075A02A /* Household.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Household.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBD227F2D5784CE0075A02A /* HouseholdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdApp.swift; sourceTree = "<group>"; };
 		6EBD22812D5784CE0075A02A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,8 +103,10 @@
 		6EBD227E2D5784CE0075A02A /* Household */ = {
 			isa = PBXGroup;
 			children = (
+				6E7383C92D5AED7F004D0450 /* MainView.swift */,
 				6EBD227F2D5784CE0075A02A /* HouseholdApp.swift */,
 				6EBD22812D5784CE0075A02A /* ContentView.swift */,
+				6E7383CB2D5AF52A004D0450 /* AddRecordView.swift */,
 				6EBD22832D5784D30075A02A /* Assets.xcassets */,
 				6EBD22882D5784D30075A02A /* Persistence.swift */,
 				6EBD228D2D5784D30075A02A /* Info.plist */,
@@ -266,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EBD22892D5784D30075A02A /* Persistence.swift in Sources */,
+				6E7383CC2D5AF52A004D0450 /* AddRecordView.swift in Sources */,
 				6EBD228C2D5784D30075A02A /* Household.xcdatamodeld in Sources */,
 				6EBD22822D5784CE0075A02A /* ContentView.swift in Sources */,
+				6E7383CA2D5AED7F004D0450 /* MainView.swift in Sources */,
 				6EBD22802D5784CE0075A02A /* HouseholdApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

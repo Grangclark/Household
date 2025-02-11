@@ -5,11 +5,14 @@
 //  Created by 長橋和敏 on 2025/02/08.
 //
 
+// 1. Core Data スタック（PersistenceController.swift）
+
 import CoreData
 
 struct PersistenceController {
     static let shared = PersistenceController()
-
+    
+    /*
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
@@ -27,14 +30,22 @@ struct PersistenceController {
         }
         return result
     }()
+     */
 
-    let container: NSPersistentCloudKitContainer
+    // let container: NSPersistentCloudKitContainer
+    let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "Household")
+        // Core Data モデルファイル名（ここでは"HouseholdAppModel"と仮定）
+        // container = NSPersistentCloudKitContainer(name: "Household")
+        container = NSPersistentContainer(name: "HouseholdAppModel")
+
         if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            // container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
+            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
         }
+        
+        /*
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -51,6 +62,13 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
-        container.viewContext.automaticallyMergesChangesFromParent = true
+         */
+        
+        container.loadPersistentStores { description, error in
+            if let error = error {
+                fatalError("Core Data ストアの読み込みに失敗: \(error)")
+            }
+        }
+        // container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
