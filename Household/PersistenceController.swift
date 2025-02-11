@@ -71,4 +71,28 @@ struct PersistenceController {
         }
         // container.viewContext.automaticallyMergesChangesFromParent = true
     }
+
+    // プレビュー用の静的プロパティを型の中に定義する
+    static var preview: PersistenceController = {
+        let controller = PersistenceController(inMemory: true)
+        let viewContext = controller.container.viewContext
+        // ダミーデータの作成例
+        /*
+        for i in 0..<10 {
+            let newRecord = Record(context: viewContext)
+            newRecord.id = UUID()
+            newRecord.type = (i % 2 == 0) ? "Income" : "Expense"
+            newRecord.amount = Double(i * 1000)
+            newRecord.date = Date()
+        }
+        do {
+            try viewContext.save()
+        } catch {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
+         */
+        return controller
+    }()
 }
+

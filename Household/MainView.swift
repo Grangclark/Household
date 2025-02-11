@@ -43,8 +43,8 @@ struct MainView: View {
                     }
                 }
             }
-                                    .listStyle(InsetGroupedListStyle())
-                                    .navigationTitle("家計簿")
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("家計簿")
             .toolbar {
                 // 入力画面へのリンク
                 NavigationLink(destination: AddRecordView()) {
@@ -56,19 +56,18 @@ struct MainView: View {
     
     // 記録を "yyyy年MM月" でグループ化
     private var groupedRecords: [String: [Record]] {
-                                    Dictionary(grouping: records) { record in
-                                        let date = record.date ?? Date()
-                                        let formatter = DateFormatter()
-                                        formatter.dateFormat = "yyyy年MM月"
-                                        return formatter.string(from: date)
-                                    }
+        Dictionary(grouping: records) { record in
+            let date = record.date ?? Date()
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy年MM月"
+            return formatter.string(from: date)
+        }
     }
                                      
     // 指定されたレコード群の合計を計算
     private func monthlyTotal(for record: [Record]) -> Double? {
                                     record.map { $0.amount }.reduce(0, +)
     }
-
 }
 
 struct MainView_Previews: PreviewProvider {
